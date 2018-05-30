@@ -444,7 +444,7 @@ class NzbObject(TryList):
         # Information fields
         self.url = url or filename
         self.groups = []
-        self.avg_date = datetime.datetime.fromtimestamp(0.0)
+        self.avg_date = datetime.datetime(1970, 1, 1, 1, 0)
         self.avg_stamp = 0.0        # Avg age in seconds (calculated from avg_age)
 
         # Bookkeeping values
